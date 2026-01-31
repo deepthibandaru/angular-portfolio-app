@@ -5,21 +5,21 @@ import {
   effect,
   inject,
   PLATFORM_ID,
-} from '@angular/core';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { HeaderComponent } from '~shared/components/header/header.component';
-import { FooterComponent } from '~shared/components/footer/footer.component';
-import { filter, map } from 'rxjs';
-import { HeaderService } from '~core/services/ui/header.service';
-import { CookiePopupComponent } from '~shared/components/cookie-popup/cookie-popup.component';
-import { toSignal } from '@angular/core/rxjs-interop';
-import { ToastStackComponent } from '~shared/components/toast-stack/toast-stack.component';
-import { AnalyticsService } from '~core/services/analytics.service';
-import { isPlatformBrowser } from '@angular/common';
-import { SeoService } from '~core/services/seo.service';
+} from "@angular/core";
+import { NavigationEnd, Router, RouterOutlet } from "@angular/router";
+import { HeaderComponent } from "~shared/components/header/header.component";
+import { FooterComponent } from "~shared/components/footer/footer.component";
+import { filter, map } from "rxjs";
+import { HeaderService } from "~core/services/ui/header.service";
+import { CookiePopupComponent } from "~shared/components/cookie-popup/cookie-popup.component";
+import { toSignal } from "@angular/core/rxjs-interop";
+import { ToastStackComponent } from "~shared/components/toast-stack/toast-stack.component";
+import { AnalyticsService } from "~core/services/analytics.service";
+import { isPlatformBrowser } from "@angular/common";
+import { SeoService } from "~core/services/seo.service";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   imports: [
     RouterOutlet,
     HeaderComponent,
@@ -27,8 +27,8 @@ import { SeoService } from '~core/services/seo.service';
     CookiePopupComponent,
     ToastStackComponent,
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  templateUrl: "./app.component.html",
+  styleUrl: "./app.component.scss",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {

@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Deepthi Bandaru — Angular Developer Portfolio</h1>
 
-  [![CI](https://github.com/deepthibandaru/angular-portfolio-app/actions/workflows/ci.yml/badge.svg)](https://github.com/deepthibandaru/angular-portfolio-app/actions/workflows/ci.yml)
+[![CI](https://github.com/deepthibandaru/angular-portfolio-app/actions/workflows/ci.yml/badge.svg)](https://github.com/deepthibandaru/angular-portfolio-app/actions/workflows/ci.yml)
 
   <p>
     A personal portfolio site highlighting projects, skills, and experience in modern Angular development.
