@@ -41,3 +41,21 @@ python3 -m http.server 8000
 ## Notes
 
 This repo has been adapted into a portfolio landing page; replace screenshots and the demo link with your hosted site when ready.
+
+---
+
+## CI / Deployment
+
+This repo includes a GitHub Actions workflow (`.github/workflows/ci.yml`) that runs format checks, linting and builds on push/PR. It can also deploy to Netlify or Vercel if you provide the required repository secrets.
+
+To enable Netlify deploys, create these repository secrets:
+
+- `NETLIFY_AUTH_TOKEN` — your Netlify personal access token
+- `NETLIFY_SITE_ID` — the Netlify site id for the target site
+
+To enable Vercel deploys, create these repository secrets:
+
+- `VERCEL_TOKEN` — your Vercel token
+- `VERCEL_ORG_ID` and `VERCEL_PROJECT_ID` — (project/organization IDs from Vercel)
+
+Netlify configuration is provided in `netlify.toml`. Vercel configuration is in `vercel.json`.
